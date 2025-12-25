@@ -12,7 +12,7 @@ suitable for research and reproducible seismic analysis.
 
 ## Scientific Background
 
-In an ideal case where events occur in a homogeneous medium (P and S rays share the same path), and the measurements contain no error or noise, the P and S differential travel times of an arbitrary pair of events 1 and 2 recorded at the same station i ( $\Delta t_{12,i}^p $ and  $\Delta t_{12,i}^s$) lie on a line with zero intercept and a slope equal to the $( V_p / V_s )$ of the medium:
+In an ideal case where events occur in a homogeneous medium (P and S rays share the same path), and the measurements contain no error or noise, the P and S differential travel times of an arbitrary pair of events 1 and 2 recorded at the same station i ($\Delta t_{12,i}^p$ and  $\Delta t_{12,i}^s$) lie on a line with zero intercept and a slope equal to the $( V_p / V_s )$ of the medium:
 
 $$
 \Delta t_{12,i}^p = t_{1,i}^p - t_{2,i}^p
@@ -24,14 +24,16 @@ $$
 $$
 
 $$
-\Delta t_{12,i}^s = \frac{V_p}{V_s} \Delta t_{12,i}^p,
+\Delta t_{12,i}^s=\frac{V_p}{V_s}\Delta t_{12,i}^p,
 $$
-where $ t_{1,i}^p, t_{2,i}^p, t_{1,i}^s $ and $t_{2,i}^s $ are the observed P and S travel times, and $ \Delta L $ is the path-length difference.
 
-In reality, the origin times of the two events contain errors $ t_1^o $ and $ t_2^o $, respectively, which cause the P and S differential times of each event pair to form a line with a non-zero intercept term related to the origin-time errors (e.g., Figure 5 in Lin and Shearer (2007)):
+where $t_{1,i}^p, t_{2,i}^p, t_{1,i}^s$ and $t_{2,i}^s$ are the observed P and S travel times, and $\Delta L$ is the path-length difference.
+
+In reality, the origin times of the two events contain errors $t_1^o$ and $t_2^o$, respectively, which cause the P and S differential times of each event pair to form a line with a non-zero intercept term related to the origin-time errors (e.g., Figure 5 in Lin and Shearer (2007)):
+
 $$
 \Delta t_{12,i}^p = \left( t_{1,i}^p - t_{2,i}^p \right) + \left( t_1^o - t_2^o \right)
-= \frac{\Delta L}{V_p} + \Delta t_{12},
+=\frac{\Delta L}{V_p} + \Delta t_{12},
 $$
 
 $$
@@ -97,5 +99,6 @@ Stored results:
 
 ## Reference
 1. Lin, G., & Shearer, P. (2007). Estimating Local Vp/Vs Ratios within Similar Earthquake Clusters. Bulletin of the Seismological Society of America, 97(2), 379-388. 10.1785/0120060115
+
 
 2. Liu, T., Gong, J., Fan, W., & Lin, G. (2023). In-Situ Vp/Vs Reveals Fault-Zone Material Variation at the Westernmost Gofar Transform Fault, East Pacific Rise. Journal of Geophysical Research: Solid Earth, 128(3), e2022JB025310. https://doi.org/10.1029/2022JB025310

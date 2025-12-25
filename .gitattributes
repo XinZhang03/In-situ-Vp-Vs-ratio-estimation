@@ -1,4 +1,0 @@
-*.json linguist-documentation
-*.md linguist-documentation
-*.c linguist-documentation
-/tests/* linguist-documentation

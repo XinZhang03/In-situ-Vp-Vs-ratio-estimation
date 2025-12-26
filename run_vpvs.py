@@ -26,8 +26,8 @@ def main():
     w.write(f"1. Total {len(dtps)} dtp-dts pairs read in.\n\n")
 
     # using restriction of dtp_thrd
-    dtss1 = dtss[dtps<dtp_thrd]
-    dtps1 = dtps[dtps<dtp_thrd]
+    dtss1 = dtss[np.abs(dtps)<dtp_thrd]
+    dtps1 = dtps[np.abs(dtps)<dtp_thrd]
     w.write("*"*40+"\n")
     w.write(f"2. After using restriction if dtp:\n{len(dtps1)} dtp-dts pairs\n\n")
 
@@ -139,4 +139,5 @@ def bootstrap_tls(x, y, n_boot=1000, random_state=42):
     return slopes
 
 if __name__ == "__main__":
+
     main()

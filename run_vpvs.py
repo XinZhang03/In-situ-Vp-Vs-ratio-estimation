@@ -50,7 +50,7 @@ def main():
     dtps3 = dtps2[rms<rms_max]
     dtss3 = dtss2[rms<rms_max]
     w.write("*"*40+"\n")
-    w.write(f"5. After using restriction if RMS.:\n{len(dtps)} dtp-dts pairs\n\n")
+    w.write(f"5. After using restriction if RMS.:\n{len(dtps3)} dtp-dts pairs\n\n")
 
     # do regression with TLS
     a3,b3,_,_ = tls_odr(dtps3,dtss3)
@@ -141,3 +141,4 @@ def bootstrap_tls(x, y, n_boot=1000, random_state=42):
 if __name__ == "__main__":
 
     main()
+
